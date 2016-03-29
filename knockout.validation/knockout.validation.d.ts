@@ -143,6 +143,7 @@ interface KnockoutSubscribableFunctions<T> {
     rules: KnockoutObservableArray<KnockoutValidationRule>;
     isModified: KnockoutObservable<boolean>;
     error: KnockoutComputed<string>;
+    errors: KnockoutValidationErrors;
     setError(error: string): void;
     clearError(): void;
 }
